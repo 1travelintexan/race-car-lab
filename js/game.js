@@ -69,7 +69,7 @@ class Game {
     this.player.move();
 
     //add a red car every so many frames
-    console.log(this.counter);
+    // console.log(this.counter);
     if (this.counter % 300 === 0) {
       this.obstacles.push(new Obstacle(this.gameScreen));
     }
