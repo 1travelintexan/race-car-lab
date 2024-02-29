@@ -11,7 +11,7 @@ class Game {
       400,
       100,
       200,
-      "./images/car.png"
+      "../images/car.png"
     );
     this.height = 600;
     this.width = 500;
@@ -22,9 +22,9 @@ class Game {
     this.gameIntervalId = 0;
     this.gameLoopFrequency = Math.round(1000 / 60);
     this.counter = 0;
-    this.song = new Audio("./song.mp3");
+    this.song = new Audio("../song.mp3");
     this.song.volume = 0.1;
-    this.crash = new Audio("./crash.wav");
+    this.crash = new Audio("../crash.wav");
   }
   start() {
     this.gameScreen.style.width = `${this.width}px`;
